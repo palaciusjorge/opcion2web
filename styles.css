@@ -562,6 +562,110 @@ header {
         font-size: 1.1rem;
     }
 }
+/* SECCIÓN SOBRE MÍ */
+#sobre-mi {
+    min-height: 100vh;
+    padding: 6rem 2rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sobre-mi-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.biografia, .github-section {
+    background-color: #444654;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.biografia h3, .github-section h3 {
+    font-size: 1.8rem;
+    color: #3b82f6;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #3b82f6;
+    display: inline-block;
+}
+
+.biografia p, .github-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #e5e7eb;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.biografia p:last-child, .github-section p:last-child {
+    margin-bottom: 0;
+}
+
+.github-link {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.btn.github-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #333;
+    color: #fff;
+    padding: 0.8rem 1.8rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 1px solid #444;
+}
+
+.btn.github-btn:hover {
+    background-color: #3b82f6;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+    border-color: #3b82f6;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+    .biografia, .github-section {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #sobre-mi {
+        padding: 5rem 1.5rem 2rem;
+    }
+    
+    .biografia h3, .github-section h3 {
+        font-size: 1.5rem;
+    }
+    
+    .biografia p, .github-section p {
+        font-size: 1rem;
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    #sobre-mi {
+        padding: 5rem 1rem 2rem;
+    }
+    
+    .biografia, .github-section {
+        padding: 1.5rem;
+    }
+    
+    .biografia h3, .github-section h3 {
+        font-size: 1.3rem;
+    }
+}
+
 html{
   scroll-behavior: smooth;
 }
